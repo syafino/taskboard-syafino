@@ -35,7 +35,7 @@ interface BoardProps {
 }
 
 export function Board({ userId }: BoardProps) {
-  const { tasks, loading, error, createTask, updateTask, moveTask, deleteTask, refetch } = useTasks(userId);
+  const { tasks, loading, error, createTask, updateTask, moveTask, deleteTask } = useTasks(userId);
   const { members, addMember, removeMember } = useTeamMembers(userId);
   const { labels, addLabel, removeLabel } = useLabels(userId);
 

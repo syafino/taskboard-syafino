@@ -47,7 +47,7 @@ export function TaskCard({ task, onClick }: TaskCardProps) {
     touchAction: 'none',
   };
 
-  const handleClick = (e: React.MouseEvent) => {
+  const handleClick = () => {
     // Only open modal if it wasn't a drag
     if (!isDragging) {
       onClick();
